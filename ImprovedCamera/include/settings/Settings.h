@@ -63,13 +63,14 @@ namespace Settings {
 		bool bAttackBow;
 		bool bKillmove;
 	};
-	// 5 Settings
+	// 6 Settings
 	struct Fixes {
 		bool bFirstPersonOverhaul;
 		bool bOverrideVanillaArmsOnMovement;
 		bool bArcheryGameplayOverhaul;
 		bool bSmoothAnimationTransitions;
 		float fControllerBufferDepth1st;
+		float fControllerBufferDepth;
 	};
 	// 14 Settings
 	struct RestrictAngles {

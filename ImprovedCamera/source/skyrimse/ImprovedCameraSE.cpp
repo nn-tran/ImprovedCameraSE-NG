@@ -484,15 +484,15 @@ namespace ImprovedCamera {
 			else
 			{
 				// Reset back to original value
-				if (*fControllerBufferDepth != 0.14f)
-					*fControllerBufferDepth = 0.14f;
+				if (*fControllerBufferDepth != m_pluginConfig->Fixes().fControllerBufferDepth)
+					*fControllerBufferDepth = m_pluginConfig->Fixes().fControllerBufferDepth;
 
 				return false;
 			}
 		}
 		// Reset back to original value
-		if (*fControllerBufferDepth != 0.14f)
-			*fControllerBufferDepth = 0.14f;
+		if (*fControllerBufferDepth != m_pluginConfig->Fixes().fControllerBufferDepth)
+			*fControllerBufferDepth = m_pluginConfig->Fixes().fControllerBufferDepth;
 
 		return true;
 	}

@@ -39,6 +39,8 @@ namespace Menu {
 			ControlType::kToggle, (void*)&m_pluginConfig->m_Fixes.bSmoothAnimationTransitions);
 		m_MenuNodes.emplace_back(1, "Controller Buffer First Person", "Sets The Amount of Inertia, (Requires Smooth Animation Transitions to be Enabled)",
 			ControlType::kSliderFloat, (void*)&m_pluginConfig->m_Fixes.fControllerBufferDepth1st, 0.01f, 0.50f, "%.2f", &MenuFixes::OnCallback);
+		m_MenuNodes.emplace_back(1, "Controller Buffer", "Sets The Amount of Inertia, dangerous",
+			ControlType::kSliderFloat, (void*)&m_pluginConfig->m_Fixes.fControllerBufferDepth, 0.14f, 0.50f, "%.2f", &MenuFixes::OnCallback);
 	}
 
 	void MenuFixes::OnOpen()

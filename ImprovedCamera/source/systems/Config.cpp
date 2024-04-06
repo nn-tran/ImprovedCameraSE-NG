@@ -107,6 +107,7 @@ namespace Systems {
 				m_Fixes.bArcheryGameplayOverhaul = std::stoi(ini.get("FIXES").get("bArcheryGameplayOverhaul"));
 				m_Fixes.bSmoothAnimationTransitions = std::stoi(ini.get("FIXES").get("bSmoothAnimationTransitions"));
 				m_Fixes.fControllerBufferDepth1st = std::stof(ini.get("FIXES").get("fControllerBufferDepth1st"));
+				m_Fixes.fControllerBufferDepth = std::stof(ini.get("FIXES").get("fControllerBufferDepth"));
 
 				m_RestrictAngles.fSitting = std::stof(ini.get("RESTRICT ANGLES").get("fSitting"));
 				m_RestrictAngles.fSittingMaxLookingUp = std::stof(ini.get("RESTRICT ANGLES").get("fSittingMaxLookingUp"));
@@ -324,6 +325,7 @@ namespace Systems {
 			ini["FIXES"]["bArcheryGameplayOverhaul"] = std::to_string(m_Fixes.bArcheryGameplayOverhaul);
 			ini["FIXES"]["bSmoothAnimationTransitions"] = std::to_string(m_Fixes.bSmoothAnimationTransitions);
 			ini["FIXES"]["fControllerBufferDepth1st"] = std::to_string(m_Fixes.fControllerBufferDepth1st);
+			ini["FIXES"]["fControllerBufferDepth"] = std::to_string(m_Fixes.fControllerBufferDepth1st);
 
 			ini["RESTRICT ANGLES"]["fSitting"] = std::to_string(m_RestrictAngles.fSitting);
 			ini["RESTRICT ANGLES"]["fSittingMaxLookingUp"] = std::to_string(m_RestrictAngles.fSittingMaxLookingUp);
